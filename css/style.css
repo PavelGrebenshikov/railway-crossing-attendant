@@ -1,0 +1,650 @@
+
+body {
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+.header__author {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.header__title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header__social {
+    width: 100%;
+}
+
+
+/* content */
+
+section {
+    width: 100%;
+    min-height: calc(100vh - 60px);
+    display: flex;
+}
+.maps {
+    width: 100%;
+    min-height: calc(100vh - 60px);
+}
+.shield {
+    width: 100%;
+    /* display: flex;
+    justify-content: center; */
+    min-height: calc(100vh - 60px);
+}
+.shield__control {
+    width: 460px;
+    min-height: 656px;
+    background: url("/images/20220521_181743.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px black;
+}
+
+
+/* столб З3 и З2 */
+.shield__control-green {
+    width: 100%;
+    height: 85px;
+    display: flex;
+    align-items: flex-end;
+}
+.wrapper__light-third {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.wrapper__light-second {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.light__bulb-third {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 16px;
+    left: 47px;
+    background-color: rgb(212, 245, 212);
+    box-shadow: 0 0 30px rgb(163, 221, 163);
+    border-radius: 50%;
+}
+.light__bulb-second {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 13px;
+    right: 49px;
+    background-color: rgb(212, 245, 212);
+    box-shadow: 0 0 30px rgb(163, 221, 163);
+    border-radius: 50%;
+}
+
+
+/* railway first */
+
+.shield__railway-first {
+    width: 100%;
+    height: 35px;
+    display: flex;
+}
+.shield__railway-removal, .shield__railway-transfer, .shield__railway-approximation {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.shield__white-removal {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 12px;
+    left: 14px;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0 0 30px rgb(243, 243, 243);
+    border-radius: 50%;
+}
+.shield__red-removal {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 12px;
+    left: 34px;
+    background-color: #46413e;
+    box-shadow: 0 0 30px rgb(163, 221, 163);
+    border-radius: 50%;
+}
+.shield__transfer-left {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 10px;
+    right: 21px;
+    background-color: #46413e;
+    box-shadow: 0 0 30px rgb(163, 221, 163);
+    border-radius: 50%;
+}
+.shield__transfer-right {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 9px;
+    left: 18px;
+    background-color: #46413e;
+    box-shadow: 0 0 30px rgb(163, 221, 163);
+    border-radius: 50%;
+}
+.shield__approximation-red {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 8px;
+    right: 36px;
+    background-color: #46413e;
+    box-shadow: 0 0 30px rgb(163, 221, 163);
+    border-radius: 50%;
+}
+.shield__approximation-white {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 8px;
+    right: 15px;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0 0 30px rgb(243, 243, 243);
+    border-radius: 50%;
+}
+
+
+/* railway second */
+
+
+.shield__railway-second {
+    width: 100%;
+    height: 35px;
+    display: flex;
+}
+.railway__control-removal, .railway__control-transfer, .railway__control-approximation {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.railway__white-removal {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 8px;
+    left: 15px;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0 0 30px rgb(243, 243, 243);
+    border-radius: 50%;
+}
+.railway__red-removal {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 8px;
+    left: 34px;
+    background-color: #46413e;
+    border-radius: 50%;
+}
+.railway__transfer-left {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 7px;
+    right: 21px;
+    background-color: #46413e;;
+    border-radius: 50%;
+}
+.railway__transfer-right {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 6px;
+    left: 18px;
+    background-color: #46413e;
+    border-radius: 50%;
+}
+.railway__approximation-red {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 5px;
+    right: 36px;
+    background-color: #46413e;
+    border-radius: 50%;
+}
+.railway__approximation-white {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 5px;
+    right: 15px;
+    background-color: rgb(253, 253, 253);
+    box-shadow: 0 0 30px rgb(243, 243, 243);
+    border-radius: 50%;
+}
+
+
+/* столб З1 и З4 */
+
+.shield__control-red {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+.wrapper__light-first {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.wrapper__light-fourth {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+.light__bulb-first {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: -5px;
+    left: 48px;
+    background-color: rgb(212, 245, 212);
+    box-shadow: 0 0 30px rgb(163, 221, 163);
+    border-radius: 50%;
+}
+.light__bulb-fourth {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: -5px;
+    right: 49px;
+    background-color: rgb(212, 245, 212);
+    box-shadow: 0 0 30px rgb(163, 221, 163);
+    border-radius: 50%;
+}
+
+
+/* Первый секция кнопок */
+.first__section {
+    width: 100%;
+    height: 115px;
+    display: flex;
+    justify-content: center;
+}
+.first__section-close, .first__section-open, .first__section-counter {
+    width: 100%;
+}
+.first__section-close > button {
+    cursor: pointer;
+    position: relative;
+    top: 42px;
+    left: 69px;
+    width: 35px;
+    height: 35px;
+    background-color: #945350;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.first__section-open > button {
+    cursor: pointer;
+    position: relative;
+    top: 42px;
+    left: 25px;
+    width: 35px;
+    height: 35px;
+    background-color: #c5c1c2;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.count {
+    width: 75px;
+    height: 30px;
+    position: relative;
+    top: 59px;
+    right: 50px;
+    color: #a11a21;
+    text-align: center;
+}
+.first__section-counter > button {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 66px;
+    left: 103px;
+    border: none;
+    border-radius: 50%;
+    background-color: #aba1a3;
+}
+
+/* вторая секция кнопок */
+
+.second__section {
+    width: 100%;
+    height: 53px;
+    display: flex;
+}
+.second__section-flashing,
+.second__section-notflashing, 
+.second__section-accident,
+.second__section-notaccident,
+.second__section-timeexposure,
+.second__section-bell {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.flashing {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 33px;
+    left: 15px;
+    background-color: #fdfdfd;
+    box-shadow: 0 0 30px #fdfdfd;
+    border-radius: 50%;
+}
+.notflashing {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 33px;
+    left: -32px;
+    border-radius: 50%;
+    background-color: #46413e;
+    box-shadow: 0 0 30px #fdfdfd;
+}
+.accident {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 33px;
+    left: -80px;
+    background-color: #fdfdfd;
+    box-shadow: 0 0 30px #fdfdfd;
+    border-radius: 50%;
+}
+.notaccident {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 33px;
+    left: -128px;
+    border-radius: 50%;
+    background-color: #46413e;
+    box-shadow: 0 0 30px #fdfdfd;
+}
+.timeexposure {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    background-color: #fdfdfd;
+    box-shadow: 0 0 30px #fdfdfd;
+    top: 33px;
+    left: -148px;
+    border-radius: 50%;
+}
+.second__section-bell > button {
+    width: 34px;
+    height: 30px;
+    position: relative;
+    top: 13px;
+    left: -45px;
+    background-color: #945350;
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* секция тверья */
+.third__section {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.third__section-a,
+.third__section-b,
+.third__section-battery,
+.third__section-nutrition,
+.third__section-discovery {
+    width: 100%;
+}
+.section-a {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 20px;
+    left: 46px;
+    border-radius: 50%;
+    background-color: rgb(212, 245, 212);
+    box-shadow: 0 0 30px rgb(163, 221, 163);
+}
+.section-b {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 20px;
+    left: -17px;
+    border-radius: 50%;
+    background-color: rgb(212, 245, 212);
+    box-shadow: 0 0 30px rgb(163, 221, 163);
+}
+.battery {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 20px;
+    left: -65px;
+    border-radius: 50%;
+    background-color: #fdfdfd;
+}
+.section__nutrition-basic {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 20px;
+    left: -100px;
+    border-radius: 50%;
+    background-color: #fdfdfd;
+    box-shadow: 0 0 30px #fdfdfd;
+}
+.section__nutrituin-backup {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: relative;
+    top: 2px;
+    left: -72px;
+    background-color: #fdfdfd;
+    box-shadow: 0 0 30px #fdfdfd;
+}
+.third__section-discovery > button {
+    width: 70px;
+    height: 30px;
+    position: relative;
+    top: 8px;
+    left: -109px;
+    transform: rotate(2deg);
+    background-color: #945350;
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.fourth__section {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.fourth__section-earth,
+.fourth__section-barrier {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.earth {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 12px;
+    left: 11px;
+    border-radius: 50%;
+    background-color: #46413e;
+    box-shadow: 0 0 30px rgb(163, 221, 163);
+}
+.fourth__section-barrier > button {
+    width: 55px;
+    height: 30px;
+    position: relative;
+    top: 9px;
+    left: 32px;
+    transform: rotate(2deg);
+    background-color: #945350;
+    border: 1px solid grey;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* пятая секция */
+
+.fifth__section {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+.fifth__section-exit,
+.fifth__section-control,
+.fifth__section-exits,
+.fifth__section-normalize {
+    width: 100%;
+}
+.fifth__section-exit > button {
+    width: 33px;
+    height: 32px;
+    position: relative;
+    top: 33px;
+    left: 60px;
+    background-color: #c5c1c2;
+    border: 1px solid grey;             
+    cursor: pointer;
+    border-radius: 3px;
+}
+.fifth__section-control > button {
+    width: 33px;
+    height: 32px;
+    position: relative;
+    left: 10px;
+    top: 35px;
+    transform: rotate(2deg);
+    background-color: #c5c1c2;
+    border: 1px solid grey;             
+    cursor: pointer;
+    border-radius: 3px;
+}
+.fifth__section-exits > button {
+    width: 33px;
+    height: 32px;
+    position: relative;
+    top: 35px;
+    left: -38px;
+    background-color: #c5c1c2;
+    border: 1px solid grey;             
+    cursor: pointer;
+    border-radius: 3px;
+}
+.fifth__section-normalize > button {
+    width: 55px;
+    height: 34px;
+    position: relative;
+    top: 35px;
+    left: -84px;
+    transform: rotate(2deg);
+    background-color: #945350;
+    border: 1px solid grey;          
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+/* maps */
+
+.train {
+    background-image: url("/images/train.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    /* left: 600px; */
+}
+.maps__train {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+}
+.maps__train-railway {
+    width: 500px;
+    text-align: center;
+    background-color: black;
+    height: 2px;
+}
+
+
+/* logs text */
+.window__logs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.window__logs-info {
+    width: 70%;
+    min-height: 430px;
+    height: auto;
+}
+
+
+
+/* javascript styles */
+
+.light_stop {
+    background-color: rgb(221, 33, 26);
+    box-shadow: 0 0 1px 3px rgb(219, 77, 72);
+}
+
+/* button reset */
+.reset {
+    width: 300px;
+    height: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* information */
+
+.window__logs-info {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
